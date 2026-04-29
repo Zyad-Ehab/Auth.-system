@@ -1,0 +1,107 @@
+/* assets/style.css - With red button and red register link */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body with background image for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    /* Background image for the whole page */
+    background-image: url('image.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Optional: dark overlay to make text readable */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 350px;
+    max-width: 100%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.nav {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+/* Register link - RED color */
+.nav a {
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #cc0000;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff0000;
+}
+
+/* Button - RED color */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #cc0000;
+}
+
+p {
+    margin-top: 15px;
+    color: #ff4444;
+    font-size: 14px;
+}
